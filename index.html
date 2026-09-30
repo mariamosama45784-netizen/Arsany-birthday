@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة عيد ميلاد - أرساني</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0b132b;
+            color: #ffffff;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+            background: rgba(28, 37, 65, 0.85);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 450px;
+            width: 90%;
+            border: 2px solid #ffd700;
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            color: #ffd700;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .message {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #e0e1dd;
+            margin-bottom: 30px;
+        }
+        .name {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        .footer-note {
+            font-size: 0.95rem;
+            color: #a5c4d4;
+            border-top: 1px solid rgba(255, 215, 0, 0.3);
+            padding-top: 15px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* تأثير نجوم بسيطة في الخلفية */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-image: radial-gradient(white 1px, transparent 0);
+            background-size: 40px 40px;
+            opacity: 0.15;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <div class="container">
+        <h1>إلى الغالي أرساني 🎉</h1>
+        <p class="message">
+            "إلى من يضيف لسنواتنا أجمل الأيام.. عيد ميلاد سعيد يا <span class="name">أرساني</span>! نتمنى لك سنة جديدة تشبه بياض قلبك، مليئة بالفرح والنجاح وتحقيق كل ما تتمناه. يسعدنا جداً حضورك لنحتفل معاً بهذا اليوم المميز."
+        </p>
+        <div class="footer-note">
+            ننتظر حضورك لنكتمل بفرحتك! 🎂✨
+        </div>
+    </div>
+
+</body>
+</html>
